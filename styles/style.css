@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro@1&display=swap');
+
+:root {
+    --dark-blue: #1E1E26;
+    --gray: #8C8C94;
+    --light-gray: #B3B2B7;
+    --light-violet: #DDC9EC;
+    --violet: #8B48BF;
+    --white: #FFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/************* BUTTONS *************/
+.btn {
+    background-color: var(--violet);
+    border: none;
+    border-radius: 4rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: .8rem 1.2rem;
+}
+
+/************* HEADER *************/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 2rem;
+}
+
+/************* SECTION CHARACTERISTICS *************/
+.main-characteristics {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+.main-characteristics article {
+    margin: 2rem 0;
+}
+
+.main-characteristics h4 {
+    background-color: var(--light-violet);
+    border-radius: 3rem 0 0 3rem;
+    margin-bottom: 1.8rem;
+    padding: .75rem 0;
+}
+
+.main-characteristics h4 span:first-child {
+    background-color: var(--violet);
+    border-radius: 3rem;
+    color: var(--white);
+    padding: .75rem 1.3rem;
+}
+
+.main-characteristics article p {
+    color: var(--light-gray);
+    margin-right: 1.2rem;
+}
+
+/************* FOOTER *************/
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.footer-search-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-search-bar input {
+    border-radius: 4rem;
+    flex: auto;
+    font-weight: bold;
+    margin-right: .5rem;
+    padding: .8rem 1.2rem;
+}
+
+.footer-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.8rem 2.2rem;
+    text-align: left;
+}
+
+.footer-options ul {
+    list-style: none;
+}
+.footer-options ul li {
+    margin-bottom: .8rem;
+}
+
+a:link, a:visited, a:active {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-icons {
+    display: flex;
+    margin: 1rem 0 4rem;
+}
+
+.footer-icons a {
+    flex: auto;
+    margin-right: 3rem;
+}
+
+.footer-icons a img {
+    width: 1.6rem;
+}
+
+.footer-icons a:last-child {
+    margin-right: 0;
+}
+
+footer svg {
+    margin-bottom: 3rem;
+}
+
+footer > p {
+    color: var(--gray);
+    font-size: .9rem;
+}
