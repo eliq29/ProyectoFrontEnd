@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;700&display=swap');
 
 :root {
     --dark-blue: #1E1E26;
@@ -7,6 +7,9 @@
     --light-violet: #DDC9EC;
     --violet: #8B48BF;
     --white: #FFF;
+    --dark-blue2: #232C50;
+    --sky-blue: #3CDDF3;
+    --dark-blue3: #242E53; 
 }
 
 * {
@@ -30,12 +33,103 @@ body {
     padding: .8rem 1.2rem;
 }
 
+.btn2 {
+    background-color: var(--dark-blue);
+    border: none;
+    border-radius: 4rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: .8rem 1.2rem;
+}
 /************* HEADER *************/
 header {
     display: flex;
     justify-content: space-between;
     margin: 1.5rem 2rem;
 }
+/************* INTRODUCTION *************/
+.introduction {
+    margin: 1.8rem;
+    text-align: right;
+}
+
+.introduction img {
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: auto;
+}
+
+.introduction h1 {
+    color: var(--dark-blue2);
+    font-size: 3.1rem;
+    font-weight: bold;
+    line-height: 57.3px;
+}
+
+.introduction h3 {
+    font-weight: 500;
+    line-height: 26.01px;
+    margin: 2rem 0 2rem 0;
+}
+
+/************* DIFFERENCES *************/
+.differences {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    padding: 2rem 1rem;
+}
+
+.differences h2 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+}
+
+.differences p {
+    font-weight: 500;
+}
+
+/************* CARDS *************/
+.cards {
+    margin: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+
+.cards h2 {
+    color: var(--dark-blue3);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.cards p {
+    color: #B9B9C1;
+    font-weight: 500;
+    margin-bottom: 4rem ;
+}
+
+.cards #name{
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+/************* INVITATION *************/
+.invitation {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    padding: 4rem;
+    text-align: center;
+}
+
+.invitation h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
 
 /************* SECTION CHARACTERISTICS *************/
 .main-characteristics {
