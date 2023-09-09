@@ -1,4 +1,5 @@
 # PROJECT_ELIZABETH_ALESSANDRA
+Dividimos el proyecto en 7 secciones, los cuales se encuentran comentados tanto en el archivo HTML y CSS para su fácil identificación.
 
 ## Integrantes
 - Yesenia Elizabeth Quema Taimbud
