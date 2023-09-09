@@ -147,6 +147,10 @@ header button {
     font-size: 2.5rem;
     margin-bottom: 5rem;
 }
+.workers-cards .card:first-child,
+.workers-cards .card:last-child {
+    display: none;
+}
 .card {
     background-color: var(--slate);
     margin: 2rem 0 5rem;
@@ -343,6 +347,10 @@ footer > p {
     .workers-cards {
         display: flex;
         margin: 6rem 0 3rem;
+    }
+    .workers-cards .card:first-child,
+    .workers-cards .card:last-child {
+        display: block;
     }
     .card {
         margin: 0;
