@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;400;500;700&display=swap');
 
 :root {
+    --blue: #232C50;
     --dark-blue: #1E1E26;
+    --dark-violet: #76419e;
     --gray: #8C8C94;
     --light-gray: #B3B2B7;
     --light-violet: #DDC9EC;
+    --sky-blue: #3CDDF3;
+    --slate: #f7f7f7;
     --violet: #8B48BF;
     --white: #FFF;
-    --dark-blue2: #232C50;
-    --sky-blue: #3CDDF3;
-    --dark-blue3: #242E53; 
 }
 
 * {
@@ -22,141 +23,157 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
-/************* BUTTONS *************/
+/************* GENERAL *************/
 .btn {
-    background-color: var(--violet);
     border: none;
     border-radius: 4rem;
     color: var(--white);
     cursor: pointer;
     font-weight: bold;
-    padding: .8rem 1.2rem;
+    padding: .8rem 1.8rem;
+}
+.btn-primary {
+    background-color: var(--violet);
+}
+.btn-primary:hover {
+    background-color: var(--dark-violet);
+}
+.btn-secondary {
+    background-color: var(--dark-blue);
+}
+.btn-secondary:hover {
+    background-color: var(--blue);
+}
+.margin-main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.padding-main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.promo-section {
+    background-color: var(--sky-blue);
+    color: var(--white);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
-.btn2 {
-    background-color: var(--dark-blue);
-    border: none;
-    border-radius: 4rem;
-    color: var(--white);
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 2rem;
-    padding: .8rem 1.2rem;
-}
 /************* HEADER *************/
 header {
     display: flex;
     justify-content: space-between;
-    margin: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
 }
-/************* INTRODUCTION *************/
+.navbar {
+    display: none;
+}
+header button {
+    display: none;
+}
+
+/************* SECTION INTRODUCTION *************/
 .introduction {
-    margin: 1.8rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
     text-align: right;
 }
-
 .introduction img {
-    max-width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
     height: auto;
+    margin: 3.5rem 0 5rem;
+    max-width: 100%;
 }
-
 .introduction h1 {
-    color: var(--dark-blue2);
+    color: var(--blue);
     font-size: 3.1rem;
     font-weight: bold;
-    line-height: 57.3px;
+    line-height: 4rem;
 }
-
 .introduction h3 {
     font-weight: 500;
-    line-height: 26.01px;
+    line-height: 1.6rem;
     margin: 2rem 0 2rem 0;
 }
 
-/************* DIFFERENCES *************/
-.differences {
-    background-color: var(--sky-blue);
-    color: var(--white);
-    padding: 2rem 1rem;
-}
-
+/************* SECTION DIFFERENCES *************/
 .differences h2 {
     font-weight: bold;
     font-size: 2.25rem;
     margin-bottom: 3rem;
 }
-
 .differences p {
     font-weight: 500;
+    line-height: 1.6rem;
 }
-
-/************* CARDS *************/
-.cards {
-    margin: 1.5rem;
-    padding: 1rem 1rem 0 1rem;
-    text-align: center;
+.differences p::before {
+    content: "Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams.";
 }
-
-.cards h2 {
-    color: var(--dark-blue3);
-    font-weight: bold;
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
-}
-
-.cards p {
-    color: #B9B9C1;
-    font-weight: 500;
-    margin-bottom: 4rem ;
-}
-
-.cards #name{
-    color: var(--dark-blue);
-    font-weight: bold;
-}
-
-/************* INVITATION *************/
-.invitation {
-    background-color: var(--sky-blue);
-    color: var(--white);
-    padding: 4rem;
-    text-align: center;
-}
-
-.invitation h2 {
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-
 
 /************* SECTION CHARACTERISTICS *************/
-.main-characteristics {
-    margin: 1.5rem 0 1.5rem 2rem;
+.characteristics {
+    margin: 4rem 0 3rem 2rem;
 }
-
-.main-characteristics article {
+.characteristics article {
     margin: 2rem 0;
 }
-
-.main-characteristics h4 {
+.characteristics h4 {
     background-color: var(--light-violet);
     border-radius: 3rem 0 0 3rem;
     margin-bottom: 1.8rem;
     padding: .75rem 0;
 }
-
-.main-characteristics h4 span:first-child {
+.characteristics h4 span:first-child {
     background-color: var(--violet);
     border-radius: 3rem;
     color: var(--white);
     padding: .75rem 1.3rem;
 }
-
-.main-characteristics article p {
+.characteristics article p {
     color: var(--light-gray);
+    line-height: 1.6rem;
     margin-right: 1.2rem;
+}
+
+/************* SECTION WORKERS *************/
+.workers {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.workers h2 {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+.card {
+    background-color: var(--slate);
+    margin: 2rem 0 5rem;
+    padding: 0 2rem 3rem;
+}
+.card img {
+    translate: 0 -2rem;
+}
+.card p {
+    color: var(--light-gray);
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+.card .name {
+    color: var(--dark-blue);
+    font-weight: bold;
+}
+
+/************* SECTION INVITATION *************/
+.invitation {
+    text-align: center;
+}
+.invitation h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 /************* FOOTER *************/
@@ -166,12 +183,10 @@ footer {
     padding: 2.5rem 2rem;
     text-align: center;
 }
-
 .footer-search-bar {
     display: flex;
     justify-content: space-between;
 }
-
 .footer-search-bar input {
     border-radius: 4rem;
     flex: auto;
@@ -179,49 +194,202 @@ footer {
     margin-right: .5rem;
     padding: .8rem 1.2rem;
 }
-
 .footer-options {
     display: flex;
     justify-content: space-between;
     margin: 2.8rem 2.2rem;
     text-align: left;
 }
-
 .footer-options ul {
     list-style: none;
 }
 .footer-options ul li {
     margin-bottom: .8rem;
 }
-
 a:link, a:visited, a:active {
     color: var(--white);
     text-decoration: none;
 }
-
 .footer-icons {
+    align-items: baseline;
     display: flex;
     margin: 1rem 0 4rem;
 }
-
 .footer-icons a {
     flex: auto;
     margin-right: 3rem;
 }
-
 .footer-icons a img {
     width: 1.6rem;
 }
-
 .footer-icons a:last-child {
     margin-right: 0;
 }
-
-footer svg {
+.footer-icons-group svg {
     margin-bottom: 3rem;
 }
-
 footer > p {
     color: var(--gray);
     font-size: .9rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    /************* GENERAL *************/
+    .btn-secondary {
+        background-color: var(--white);
+        color: var(--violet)
+    }
+    .btn-secondary:hover {
+        background-color: var(--slate);
+    }
+    .margin-main {
+        margin-left: 7.2rem;
+        margin-right: 7.2rem;
+    }
+    .padding-main {
+        padding-left: 7.2rem;
+        padding-right: 7.2rem;
+    }
+    .promo-section {
+        align-items: center;
+        background-color: var(--violet);
+        display: flex;
+    }
+
+    /************* HEADER *************/
+    header {
+        margin: 3.2rem 7.2rem;
+    }
+    header img:last-child {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .navbar ul {
+        display: flex;
+        list-style: none;
+    }
+    .navbar ul li {
+        margin-right: 2rem;
+    }
+    .navbar ul li:last-child {
+        margin-right: 0;
+    }
+    .navbar ul li a {
+        color: var(--dark-blue);
+    }
+    header button {
+        display: block;
+    }
+
+    /************* SECTION INTRODUCTION *************/
+    .introduction {
+        align-items: center;
+        display: flex;
+        margin-bottom: 6rem;
+        margin-top: 6rem;
+    }
+    .introduction img {
+        height: 100%;
+        margin: 0 4rem 0 0;
+        width: 55%;
+    }
+
+    /************* SECTION DIFFERENCES *************/
+    .differences h2 {
+        flex: 1;
+        margin-bottom: 0;
+        margin-right: 4rem;
+    }
+    .differences p {
+        flex: 1;
+        margin-left: 4rem;
+    }
+    .differences p::before {
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.";
+    }
+
+    /************* SECTION CHARACTERISTICS *************/
+    .characteristics {
+        background-color: var(--slate);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 3.5rem 2rem;
+    }
+    .characteristics article {
+        margin: 0 0 2.5rem 0;
+        width: 32rem;
+    }
+    .characteristics h4 {
+        background-color: transparent;
+        margin-bottom: .8rem;
+    }
+    .characteristics h4 span:last-child {
+        margin-left: 1.2rem;
+    }
+    .characteristics article p {
+        margin-left: 5.2rem;
+        margin-right: 0;
+    }
+
+    /************* SECTION WORKERS *************/
+    .workers {
+        margin: 6rem 2rem;
+    }
+    .workers-cards {
+        display: flex;
+        margin: 6rem 0 3rem;
+    }
+    .card {
+        margin: 0;
+    }
+
+    /************* SECTION INVITATION *************/
+    .invitation {
+        text-align: left;
+    }
+    .invitation button {
+        margin-left: 40%;
+        width: 9rem;
+    }
+
+    /************* FOOTER *************/
+    footer > section {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+    .footer-icons-group {
+        display: flex;
+        flex: 1;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .footer-icons {
+        margin: 0;
+        justify-content: space-between;
+    }
+    .footer-icons a {
+        flex: none;
+        margin-right: 0;
+    }
+    footer svg {
+        margin-bottom: 0;
+    }
+    .footer-options {
+        flex: 2;
+        margin: 0 5rem;
+    }
+    .footer-search-bar {
+        align-items: flex-start;
+        flex: 1;
+    }
+    footer > p {
+        margin-top: 2rem;
+        text-align: right;
+    }
 }
